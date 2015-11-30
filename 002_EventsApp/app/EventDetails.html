@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html lang="en" ng-app="eventsApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Event Registrations</title>
+		<!-- link rel="stylesheet" href="/css/bootstrap.min.css" /-->
+		<link rel="stylesheet" href="/css/app.css" />
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			<div ng-controller="EventController">
+				
+				{{event.name}}<br/>
+				{{event.date}}<br/>
+				{{event.time}}<br/>
+				{{event.venue}}<br/>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Underscore -->		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<!-- Bootstrap -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Angular -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!-- Application JS -->
+		<script src="/js/app.js"></script>
+		<!-- Controller JS -->
+		<script src="/js/EventController.js"></script>
+		    
+	</body>
+</html>
