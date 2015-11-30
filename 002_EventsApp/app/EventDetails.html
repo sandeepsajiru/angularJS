@@ -2,7 +2,7 @@
 <html lang="en" ng-app="eventsApp">
 	<head>
 		<meta charset="utf-8">
-		<title>Event Registrations</title>
+		<title>Event Details</title>
 		<!-- link rel="stylesheet" href="/css/bootstrap.min.css" /-->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/app.css" />
@@ -37,9 +37,17 @@
 						</address>
 					</div>
 				</div>
-			</div>
+				<hr/>
 			
+				<h3>Sessions</h3>
+				<ul class="thumbnails">
+					<li ng-repeat="s in event.sessions">{{s.name}}</li>		
+				</ul>
+				
+			</div>
 		</div>
+		
+		
 		
 		
 		

@@ -11,7 +11,15 @@ myApp.controller('EventController', function EventController($scope){
 			city:'Hyderabad',
 			country:'India'
 		},
-		imgUrl:'/img/jiyaBday.png'
+		imgUrl:'/img/jiyaBday.png',
+		sessions:[
+			{name:'welcome drinks'},
+			{name:'impromptu getting together questions'},
+			{name:'magic show'},
+			{name:'cake cutting'},
+			{name:'dandiya'},
+			{name:'dinner'},
+		]
 	};
 	
 });
