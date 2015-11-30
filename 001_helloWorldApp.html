@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="hwApp" ng-controller="hwController">
+  <head>
+    <title>Angular Hello World</title>
+  </head>
+  <body>
+    
+    <!-- Display contents of $scope.hwMsg variable available as part of Angular Application Module -->
+    <h1>{{hwMsg}}</h1>
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>    
+    <script type="text/javascript">
+      //Create an Angular App Module
+      var angApp = angular.module('hwApp', []);
+      
+      //Create a Controller for the App
+      angApp.controller('hwController', function($scope){
+        $scope.hwMsg = "Hello Angular World!!";
+      });
+    </script>
+  </body>
+</html>
