@@ -4,19 +4,39 @@
 		<meta charset="utf-8">
 		<title>Event Registrations</title>
 		<!-- link rel="stylesheet" href="/css/bootstrap.min.css" /-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/app.css" />
 	</head>
 	<body>
 		
 		<div class="container">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">
+						
+					</ul>
+				</div>
+			</div>
 			
 			<div ng-controller="EventController">
-				
-				{{event.name}}<br/>
-				{{event.date}}<br/>
-				{{event.time}}<br/>
-				{{event.venue}}<br/>
-				
+				<img ng-src="{{event.imgUrl}}" alt="{{event.name}}" />
+				<div class="row">		
+					<div class="span1"><h3>{{event.name}}</h3></div>
+				</div>
+				<div class ="row">
+					<div class="span3">
+						<div><strong>DATE: </strong>{{event.date}}</div>
+						<div><strong>TIME: </strong>{{event.time}}</div>
+						
+					</div>
+					<div class="span4">
+						<address>
+							<div><strong>ADDRESS:</strong></div>
+							<div>{{event.venue.city}}</div>
+							<div>{{event.venue.country}}</div>
+						</address>
+					</div>
+				</div>
 			</div>
 			
 		</div>
